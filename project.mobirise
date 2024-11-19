@@ -1,0 +1,2066 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "theme": {
+      "name": "deepm5",
+      "title": "DeepM5",
+      "styling": {
+        "primaryColor": "#316bf3",
+        "secondaryColor": "#c46a4d",
+        "successColor": "#EDD2C9",
+        "infoColor": "#ffffff",
+        "warningColor": "#316bf3",
+        "dangerColor": "#7A5FA1",
+        "mainFont": "Sora",
+        "display1Font": "Sora",
+        "display1Size": 5.625,
+        "display2Font": "Sora",
+        "display2Size": 3.75,
+        "display5Font": "Sora",
+        "display5Size": "3.0",
+        "display7Font": "Sora",
+        "display7Size": 1.56,
+        "display4Font": "Sora",
+        "display4Size": 1.125,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Tech Startup",
+      "nameSelectPreset": "tech-startup",
+      "presetSourceTheme": "deepm5",
+      "additionalSetColors": [
+        "#fff5e5",
+        "#f1634f",
+        "#316bf3"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "Pénzmosási törvény",
+    "versionFirst": "5.9.18",
+    "siteFonts": [
+      {
+        "css": "'Sora', sans-serif",
+        "name": "Sora",
+        "url": "https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800"
+      }
+    ],
+    "imageResize": true,
+    "favicon": false,
+    "mbrsiteDomain": "m7hfs0wy8z",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 67,
+    "versionPublish": "5.9.18",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            ".navbar-dropdown": {
+              "& when not (@transparent)": {
+                "background-color": "@menuBgColor !important"
+              },
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+              },
+              "padding": "0",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "& when not (@transparent)": {
+                  "background-color": "@menuBgColor !important"
+                },
+                "& when (@transparent)": {
+                  "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity) !important"
+                },
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                },
+                "background": "@container",
+                "background-color": "@container !important"
+              }
+            },
+            ".menu_box": {
+              "@media (max-width: 991px)": {
+                ".navbar.opened, .navbar-collapse": {
+                  "background-color": "@menuBgColor !important",
+                  "transition": "all 0s ease 0s"
+                }
+              }
+            },
+            "& when not (@sticky)": {
+              ".navbar-dropdown": {
+                "position": "relative !important"
+              }
+            },
+            "& when (@sticky)": {
+              "z-index": "1000",
+              "width": "100%",
+              "nav.navbar": {
+                "position": "fixed",
+                "padding-top": "1rem",
+                "padding-bottom": "1rem"
+              }
+            },
+            "& when (@showSidebar)": {
+              ".icons-menu-main": {
+                "display": "none",
+                "@media (max-width: 991px)": {
+                  "max-width": "100%",
+                  "margin": "1rem 0 1rem 1rem",
+                  "display": "flex"
+                }
+              },
+              ".mbr-section-btn-main": {
+                "display": "none",
+                "@media (max-width: 991px)": {
+                  "margin-top": "1rem",
+                  "display": "block"
+                }
+              }
+            },
+            "& when not (@showSidebar)": {
+              ".icons-menu-main": {
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "max-width": "150px",
+                "@media (max-width: 991px)": {
+                  "max-width": "100%",
+                  "margin": "1rem 0 1rem 1rem"
+                }
+              },
+              ".mbr-section-btn-main": {
+                "@media (max-width: 991px)": {
+                  "margin-top": "1rem"
+                }
+              }
+            },
+            ".btn": {
+              "min-height": "auto",
+              "box-shadow": "none",
+              "margin-top": "0",
+              "&:hover": {
+                "box-shadow": "none"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".offcanvas": {
+                "padding": "12rem 64px 0",
+                "width": "50%",
+                "background-color": "@offSidebarColor"
+              },
+              ".offcanvas_image img": {
+                "width": "auto",
+                "object-fit": "cover",
+                "display": "inline-block"
+              },
+              ".offcanvas-header": {
+                "position": "relative",
+                "padding": "0",
+                ".btn-close": {
+                  "position": "absolute",
+                  "top": "-70px",
+                  "right": "0",
+                  "width": "35px",
+                  "height": "30px"
+                }
+              },
+              ".offcanvas-body": {
+                "text-align": "center",
+                "padding": "0",
+                ".mbr-text, .mbr-section-subtitle": {
+                  "margin-bottom": "32px"
+                },
+                ".offcanvas_contact": {
+                  "margin": "0"
+                }
+              },
+              ".offcanvas_box": {
+                "button.btn_offcanvas": {
+                  "outline": "none",
+                  "width": "40px",
+                  "height": "40px",
+                  "cursor": "pointer",
+                  "transition": "all 0.2s",
+                  "position": "relative",
+                  "align-self": "center",
+                  ".hamburger span": {
+                    "position": "absolute",
+                    "right": "0",
+                    "width": "40px",
+                    "height": "2px",
+                    "border-right": "5px",
+                    "background-color": "@hamburgerColor",
+                    "&:nth-child(1)": {
+                      "top": "18px",
+                      "transition": "all 0.2s"
+                    },
+                    "&:nth-child(2)": {
+                      "top": "25px",
+                      "transition": "all 0.2s"
+                    }
+                  },
+                  "&:hover .hamburger span": {
+                    "width": "36px",
+                    "&:nth-child(2)": {
+                      "width": "33px",
+                      "transition-delay": "0.2s"
+                    }
+                  }
+                }
+              },
+              "ul.navbar-nav": {
+                "padding-bottom": "1.5rem"
+              },
+              ".dropdown-menu .dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after, .link.dropdown-toggle::after": {
+                "display": "inline-block",
+                "width": "7px",
+                "height": "7px",
+                "margin-left": ".5rem",
+                "margin-bottom": "2px",
+                "content": "\"\"",
+                "border": "2px solid",
+                "border-left": "none",
+                "border-top": "none",
+                "transform": "rotate(-45deg)"
+              },
+              ".link.dropdown-toggle::after": {
+                "padding": "0 !important",
+                "transform": "rotate(45deg)"
+              },
+              "li.nav-item": {
+                "position": "relative",
+                "display": "inline-block",
+                "padding": "1px 7px !important",
+                "vertical-align": "middle",
+                "line-height": "2em !important",
+                "font-weight": "600 !important",
+                "text-decoration": "none",
+                "letter-spacing": "0 !important",
+                "z-index": "1"
+              },
+              ".lg_brand": {
+                "margin": "0 1rem"
+              }
+            },
+            ".nav-item": {
+              "margin": "4px 15px",
+              "@media (min-width: 1200px)": {
+                "margin": "4px 20px"
+              },
+              "@media (max-width: 991px)": {
+                "margin": "0 !important"
+              },
+              ".nav-link": {
+                "transition": "all 0.3s ease-out",
+                "&:hover": {
+                  "text-decoration": "underline"
+                }
+              }
+            },
+            ".dropdown-menu": {
+              "border-radius": "0",
+              "box-shadow": "none",
+              "text-align": "left",
+              "@media (min-width: 992px)": {
+                "padding": "18px 34px 22px",
+                "min-width": "250px",
+                "top": "auto !important",
+                "left": "-40px !important",
+                "&.dropdown-submenu": {
+                  "left": "215px !important",
+                  "top": "-45% !important"
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".dropdown-menu .dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after, .link.dropdown-toggle::after": {
+                "display": "inline-block",
+                "width": "7px",
+                "height": "7px",
+                "margin-left": ".5rem",
+                "margin-bottom": "2px",
+                "content": "\"\"",
+                "border": "2px solid",
+                "border-left": "none",
+                "border-top": "none",
+                "transform": "rotate(-45deg)",
+                "right": "15px",
+                "position": "absolute",
+                "margin-top": "-2px"
+              },
+              ".show.dropdown-toggle[aria-expanded=\"true\"]::after": {
+                "transform": "rotate(45deg)",
+                "margin-top": "-4px"
+              },
+              ".offcanvas_box": {
+                "display": "none"
+              }
+            },
+            ".dropdown-item": {
+              "border": "none",
+              "font-weight": "700 !important"
+            },
+            ".nav-dropdown .link": {
+              "font-weight": "300 !important",
+              "padding": "0 !important",
+              "margin": "0 !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".container, .container-fluid": {
+              "padding": "0 60px",
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              }
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor",
+              "font-size": "17px",
+              "margin-right": "10px",
+              "margin-bottom": "5px",
+              "&:last-child": {
+                "margin-right": "0"
+              },
+              "width": "25px",
+              "height": "25px",
+              "border-radius": "50%",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "transition": "all 0.2s ease-in-out",
+              "&:hover": {
+                "opacity": ".5"
+              }
+            },
+            ".navbar-nav": {
+              "@media (min-width: 992px)": {
+                "margin": "0"
+              },
+              "margin": "0 1rem"
+            },
+            ".dropdown-menu, .navbar.opened": {
+              "background-color": "@transparent !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "70px",
+              "padding": "20px 0",
+              "transition": "all 0.3s",
+              "border-bottom-width": "0",
+              "@media (max-width: 992px)": {
+                "min-height": "30px",
+                "max-height": "none"
+              },
+              "&:not(.navbar-short)": {},
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0",
+                "margin": "8px 0"
+              },
+              ".navbar-logo img": {
+                "max-width": "53px",
+                "max-height": "53px",
+                "object-fit": "contain",
+                "border-radius": "10px"
+              },
+              ".navbar-collapse": {
+                "justify-content": "space-between",
+                "& when (@showLogo), (@showBrand)": {
+                  "justify-content": "space-between"
+                },
+                "z-index": "1"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "left"
+                },
+                ".icons-menu": {
+                  "padding": "0"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item": {
+                  "padding": ".5rem 0"
+                },
+                ".navbar-collapse": {
+                  "padding": "34px 0",
+                  "border-radius": "25px"
+                },
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "padding": "6px 0 6px 15px",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto",
+                    "margin-top": "-0.4rem"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "overflow": "hidden",
+                  "li": {
+                    "margin": "0"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0 !important",
+                  "margin": "0",
+                  "margin-top": "8px",
+                  "text-align": "left"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding": "0"
+                }
+              },
+              "&.navbar-short": {
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2.5rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "min-height": "60px",
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "min-height": "70px",
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "10px 0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important",
+                "font-weight": "700"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap",
+              "background-color": "@container",
+              "border-radius": "10px",
+              "padding": "8px 0",
+              "@media (max-width: 992px)": {
+                "padding": "8px"
+              }
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "170px"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "48px",
+              "height": "48px",
+              "border-radius": "50%",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              "color": "@menuBgColor",
+              "background": "@hamburger",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "10px",
+                "margin-top": "14px",
+                "width": "26px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "flex-start"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding": "0",
+              "text-align": "center",
+              "margin-bottom": "35px"
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            },
+            ".navbar-dropdown .navbar-logo": {
+              "margin-right": "15px"
+            },
+            "@media (min-width: 768px)": {
+              ".container-fluid": {
+                "padding-left": "60px",
+                "padding-right": "60px"
+              }
+            },
+            ".mbr-section-btn-main": {
+              "padding-top": "5px",
+              ".btn": {
+                "margin": "0 4px 4px 4px",
+                "@media (max-width: 992px)": {
+                  "margin": "0 16px 4px"
+                }
+              }
+            },
+            ".navbar-caption:hover": {
+              "color": "@secondaryColor"
+            },
+            ".dropdown-menu.dropdown-submenu": {
+              "@media (min-width: 992px)": {
+                "left": "175px !important",
+                "top": "-45% !important"
+              }
+            },
+            ".text_widget": {
+              "margin-bottom": "32px",
+              "a": {
+                "transition": "all 0.3s ease-out",
+                "&:hover": {
+                  "color": "@secondaryColor !important"
+                }
+              },
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle, .text_widget, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            "a[class*=\"text-\"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption):hover": {
+              "background-image": "none"
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "deepm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu menu1 deepm5\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" condition=\"false\">\n        <input type=\"color\" title=\"Container Color\" value=\"#ffffff\" name=\"container\" selected>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n        <input type=\"range\" title=\"Amount\" name=\"iconsAmount\" min=\"0\" max=\"4\" step=\"1\" value=\"3\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Color Icons\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\" condition=\"false\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color Menu\" name=\"menuBgColor\" value=\"#3d4045\">\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ED9b82\">\n        <input type=\"color\" title=\"Hamburger Container\" name=\"hamburger\" value=\"#ffffff\">\n        <header>Sidebar</header>\n        <input type=\"checkbox\" title=\"Sidebar\" name=\"showSidebar\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" condition=\"showSidebar\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" condition=\"showSidebar\" checked>\n        <input type=\"checkbox\" title=\"Contacts\" name=\"showContacts\" condition=\"showSidebar\" checked>\n        <input type=\"color\" title=\"OffSidebar Color\" name=\"offSidebarColor\" value=\"#8a9198\" condition=\"showSidebar\">\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div class=\"menu_box\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"navbar-brand d-flex d-lg-none\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"@THEME_PATH@/components/index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/logo.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption\" data-app-selector=\".navbar-caption\" href=\"@THEME_PATH@/components/index.html\" data-app-placeholder=\"Type Text\">DEEPM5\n                    </a>\n                </span>\n            </div>\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <div class=\"navbar-brand\" mbr-class=\"{'d-none d-lg-flex' : showLogo || showBrand, 'd-none' : !showLogo || !showBrand}\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"@THEME_PATH@/components/index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/logo.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                    <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption\" data-app-selector=\".navbar-caption\" href=\"@THEME_PATH@/components/index.html\" data-app-placeholder=\"Type Text\">Pénzmosás elleni <br>törvény&nbsp;információs <br>oldal</a></span>\n                </div>\n                <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#article03-h\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong></strong></a></li><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#article03-h\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong>Pmt. fórum</strong></a></li><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#features3-k\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong>Oktatóanyag - eBook</strong></a></li><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#content9-16\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong>Pmt. tanácsadás, ellenőrzés</strong></a></li><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#features1-1f\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong>identiGO</strong></a></li><li class=\"nav-item\"><a class=\"nav-link link text-primary\" href=\"index.html#content3-1t\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><strong>Fontos linkek</strong></a></li></ul>\n                <div class=\"icons-menu-main\" mbr-if=\"showIcons\">\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                    </a>\n                </div>\n\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn-main\" mbr-if=\"showButtons\" role=\"tablist\"><a class=\"btn btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">START</a></div>\n                <div class=\"offcanvas_box\" mbr-if=\"showSidebar\">\n                    <button class=\"btn_offcanvas\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasRight\" aria-controls=\"offcanvasRight\">\n                        <div class=\"hamburger\">\n                            <span></span>\n                            <span></span>\n                        </div>\n                    </button>\n                    <div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"offcanvasRight\" aria-labelledby=\"offcanvasRightLabel\">\n                        <div class=\"offcanvas-header\">\n                            <button type=\"button\" class=\"btn-close text-reset\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>\n                        </div>\n                        <div class=\"offcanvas-body\">\n                            <div mbr-if=\"showImage\" class=\"offcanvas_image\">\n                                <img src=\"@PROJECT_PATH@/assets/images/logo.png\" alt=\"Mobirise\" mbr-style=\"{'height': imageSize + 'rem'}\">\n                            </div>\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-subtitle, .text_widget, .mbr-section-btn\" mbr-theme-style=\"display-5\">\n                                DeepM5\n                            </h3>\n                            <div class=\"offcanvas_contact\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt omnis\n                                    praesentium quidem quis. Ad aliquam aperiam autem deleniti dolore, fugit impedit,\n                                    ipsam, minima nihil quia quod ratione repellat totam.\n                                </p>\n                                <p class=\"text_widget mbr-fonts-style\" mbr-if=\"showContacts\" data-app-selector=\".text_widget\" mbr-theme-style=\"display-4\">\n                                    <a href=\"#\" class=\"text-info\">Mobi@rise.com</a>\n                                    <br><br>\n                                    <a href=\"tel:12345678900\" class=\"text-info\">+1 234-567-8900</a>\n                                </p>\n                            </div>\n                            <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                                </a>\n                                <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                                    <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                                </a>\n                            </div>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n                                <a class=\"btn btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    START\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n</section>",
+          "_cid": "txhq1zUixQ",
+          "_anchor": "menu1-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "overflow": "hidden",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container, .container-fluid": {
+              "position": "relative",
+              "padding": "0 60px",
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              },
+              ".decor-wrapper": {
+                "position": "absolute",
+                "bottom": "0",
+                "left": "-20rem",
+                "height": "100%",
+                "width": "100%",
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "flex-end",
+                "@media (max-width: 992px)": {
+                  "display": "none"
+                },
+                ".decor": {
+                  "border": "0.5px solid @decor",
+                  "border-left": "none",
+                  "border-radius": "0 10px 10px 0",
+                  "height": "190px",
+                  "width": "30%",
+                  "margin-bottom": "60px",
+                  "&:first-child": {
+                    "width": "40%"
+                  },
+                  "&:last-child": {
+                    "width": "45%",
+                    "margin-bottom": "0"
+                  }
+                }
+              }
+            },
+            ".title-wrapper": {
+              "position": "relative",
+              "z-index": "1",
+              ".mbr-section-title": {
+                "margin-bottom": "10px"
+              },
+              ".mbr-section-subtitle": {
+                "padding": "8px 5px",
+                "display": "inline-flex",
+                "background-color": "@subtitle",
+                "margin-bottom": "50px"
+              },
+              ".text-wrapper": {
+                "padding": "0 15% 0 30%",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                },
+                ".mbr-text": {
+                  "margin-bottom": "40px",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "20px"
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle, .subtitle-wrapper": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "deepm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2 deepm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"color\" title=\"Subtitle BG\" value=\"#ed9b82\" name=\"subtitle\" condition=\"showSubtitle\" selected>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Decoration\" name=\"showDecor\" checked>\n        <input type=\"color\" title=\"Decoration Color\" value=\"#ab7968\" name=\"decor\" condition=\"showDecor\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1003.jpeg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#3d4045\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Pénzmosás elleni törvény hatálya alá tartozó szolgáltató?</b></h1>\n                    <div class=\"subtitle-wrapper\">\n                        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle, .subtitle-wrapper\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                            <b style=\"font-size: 1.56rem; display: inline !important;\"><br></b><br><b style=\"font-size: 1.56rem; display: inline !important;\">&nbsp; PÉNZMOSÁSI TÖRVÉNY HATÁLYA ALÁ TARTOZÓ SZOLGÁLTATÓ?&nbsp;&nbsp;</b><br><br><b><br></b>\n                        </h3>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <b> Weboldalunkon összegyűjtöttünk minden hasznos információt, tudásanyagot és szolgáltatást, mely segítségére lehet&nbsp; a Pénzmosás elleni törvénynek való megfelelésben.</b></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">ABOUT US</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"decor-wrapper\" mbr-if=\"showDecor\">\n            <div class=\"decor\"></div>\n            <div class=\"decor\"></div>\n            <div class=\"decor\"></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header2-10",
+          "_isUserblock": true,
+          "_cid": "uu0PRvZboO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "list2",
+          "_sourceTheme": "tutorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tutorm5 list2\" group=\"List\" plugins=\"mbr-switch-arrow, mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<header>Items</header>\n\t\t<select title=\"Amount\" name=\"cardAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t\t<option value=\"5\" selected>5</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Border Color\" value=\"#838383\" name=\"border\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/tutorm5/components/_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/tutorm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12\">\n\t\t\t\t<div class=\"title-wrapper\">\n\t\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>\n\t\t\t\t\t\tA Pénzmosási törvényről</b></h3>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Mi az a Pénzmosási törvény?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">A Pénzmosás elleni törvény azt a kötelezettséget írja elő bizonyos szolgáltatók számára, hogy <b>átvilágítsák ügyfeleiket és folyamatosan nyomon kövessék a velük való üzleti kapcsolatot</b>, vagy ügyleti megbízást.\n<br>\n<br>Ha olyan tevékenységet észlelnek, ami gyaníthatóan pénzmosással, vagy terrorizmus finanszírozásával kapcsolatos, <b>bejelentést kell tenniük a hatóságok felé</b>.\n<br>\n<br>A megfelelés sajnos bonyolult és szerteágazó <b>adminisztrációt jelent a szolgáltatók számára</b>, emiatt nem szívesen foglalkoznak a megfeleléssel.\n<br>\n<br>Az ellenőrzések száma azonban jelentősen nőtt az elmúlt években, ezek során alaposan vizsgálják a szolgáltatók törvényi megfelelését.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 1\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Ki tartozik a Pénzmosási törvény hatálya alá?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Magyarországon több tízezer szolgáltató tartozik a törvény hatálya alá, alapvetően olyanok, akik:\n<br>\n<br>1. vagy folyamatos <b>rálátással rendelkeznek ügyfeleik pénzmozgásaira</b>,\n<br>2. vagy akik <b>nagy összegű tranzakciók</b> bonyolításában játszanak szerepet\n<br>\n<br>Az alábbi szolgáltatók kötelezettek például a Pénzmosási törvény által előírt adminisztrációra:\n<br>\n<br>- könyvelők, könyvvizsgálók, adótanácsadók\n<br>- ingatlanügylettel kapcsolatos szolgáltatók\n<br>- székhelyszolgáltatók\n<br>- árukereskedők, nemesfémkereskedők\n<br>- és természetesen pénzintézetek, egyéb pénzügyi szolgáltatók<br></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 2\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Mik a legfontosabb teendőim?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">A teendőket alapvetően 3 részre tudjuk bontani:\n<br>\n<br><b>1. A tevékenység megkezdése előtti teendők\n<br></b>- a VPOP_KSZ17 nyomtatvány beküldése\n<br>- a Belső szabályzat beküldése\n<br>- AFADREG beküldése - regisztráció a Tényleges Tulajdonosi Nyilvántartásba\n<br>\n<br><b>2. Szerződéskötéskor: ügyfélátvilágítási teendők\n<br></b>- ügyfélátvilágítási adatlap kitöltése\n<br>- szükséges dokumentumok beszerzése\n<br>- ENSZ-EU szűrés (Kit. szerinti szűrés) futtatása\n<br>- tényleges tulajdonos ellenőrzése\n<br>- kockázati besorolás\n<br>\n<br><b>3. Az üzleti kapcsolat alatt: monitoring\n<br></b>- ügyféladatok naprakészen tartása\n<br>- aktuális dokumentumok beszerzése\n<br>- ENSZ-EU szűrés pár hetente (a lista frissülésekor)\n<br>- rendszeres kockázati felülvizsgálat\n<br>- üzleti kapcsolat folyamatos nyomonkövetése - gyanús tevékenység esetén be kell jelenteni az ügyfelet</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 3\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>De miért nekem kell ezzel foglalkoznom?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">A legtöbb szolgáltatóban felmerül a kérdés, hogy egy ennyi adminisztrációval járó törvény, illetve az abban foglalt kötelezettségek miért az ő, és miért nem az állami szervek feladata.<br>\n<br>Tény, hogy az elmúlt évtizedben bevezetett automatizmusok, illetve az online számla bevezetésével sok adat áll az adóhatóság, valamint a cégbíróság rendelkezésére. Ugyanakkor a törvény számos különböző forrásból származó adatbázis, nyilvántartás, lista ellenőrzését írja elő, amelyek folyamatosan változnak, így egyelőre nem áll rendelkezésre átfogó rendszer az állami oldalról. <br><br>Ezen túl vannak olyan tényezők, melyeket a hatóságok valóban nem (vagy nem időben) képesek látni, ilyen például a strómanok által vezetett cégek, a gyakori, nagy összegű készpénzfelvételek, bizonylat nélkül érkező, nagy összegű utalások, tagi kölcsönök a cég számlájára, valós tevékenység nélküli tranzakciók, stb. Ezt szem előtt tartva kerültek bevonásra a fenti szolgáltatók a pénzmosás elleni küzdelembe&nbsp;<br></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 4\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Ki ellenőrzi a Pénzmosási törvénynek való megfelelést?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tEz a szolgáltatás típusától függ.<br><br>A&nbsp;<b>könyvviteli </b>szolgáltatók, <b>adótanácsadók</b>,&nbsp;<b>ingatlannal </b>kapcsolatos szolgáltatók, valamint <b>székhelyszolgáltatók </b>felügyeletét a NAV Pénzmosás Elleni Iroda látja el.<br><br>A <b>könyvvizsgálókat </b>a Magyar Könyvvizsgálói Kamara, míg az <b>ügyvédeket </b>az Ügyvédi Kamara ellenőrzi.&nbsp;<br><br>A Magyar Nemzeti Bank hatálya alá tartoznak a <b>pénzügyi szolgáltatásokkal</b> foglalkozó cégek, valamint a <b>biztosítók</b>.&nbsp;<br><br>Az <b>árukereskedők, nemesfémkereskedők</b> felügyeleti szerve Budapest Főváros Kormányhivatala.&nbsp;</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 32px",
+                "margin": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0 4px"
+              }
+            },
+            ".row": {
+              "margin": "0",
+              ".title-wrapper": {
+                ".mbr-section-title": {
+                  "margin-bottom": "50px",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "32px"
+                  }
+                }
+              },
+              ".panel-group": {
+                ".card": {
+                  "border-bottom": "1px solid @border",
+                  "border-radius": "0 !important",
+                  "&:first-child": {
+                    "border-top": "1px solid @border"
+                  },
+                  ".card-header": {
+                    "padding": "32px 0",
+                    "border-bottom": "none",
+                    "background-color": "transparent",
+                    ".panel-title": {
+                      "display": "flex",
+                      "justify-content": "space-between",
+                      "align-items": "center",
+                      "&:not(.collapsed)": {
+                        ".mbr-iconfont": {
+                          "transform": "rotate(-45deg)"
+                        }
+                      },
+                      ".panel-title-edit": {
+                        "margin-bottom": "0"
+                      },
+                      ".mbr-iconfont": {
+                        "font-size": "24px",
+                        "transition": "all 0.3s ease-out"
+                      }
+                    }
+                  },
+                  ".panel-collapse": {
+                    ".panel-body": {
+                      "margin-bottom": "50px",
+                      "@media (max-width: 992px)": {
+                        "margin-bottom": "32px"
+                      },
+                      ".mbr-text": {
+                        "margin-bottom": "50px",
+                        "@media (max-width: 992px)": {
+                          "margin-bottom": "32px"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#3d4045",
+              "text-align": "center"
+            },
+            ".panel-title-edit, .mbr-iconfont": {
+              "color": "#3d4045",
+              "text-align": "left"
+            },
+            ".mbr-text": {
+              "color": "#3d4045",
+              "text-align": "left"
+            }
+          },
+          "_cid": "uubQfm9UJG",
+          "_anchor": "list2-1n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "list2",
+          "_sourceTheme": "tutorm5",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 32px",
+                "margin": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0 4px"
+              }
+            },
+            ".row": {
+              "margin": "0",
+              ".title-wrapper": {
+                ".mbr-section-title": {
+                  "margin-bottom": "50px",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "32px"
+                  }
+                }
+              },
+              ".panel-group": {
+                ".card": {
+                  "border-bottom": "1px solid @border",
+                  "border-radius": "0 !important",
+                  "&:first-child": {
+                    "border-top": "1px solid @border"
+                  },
+                  ".card-header": {
+                    "padding": "32px 0",
+                    "border-bottom": "none",
+                    "background-color": "transparent",
+                    ".panel-title": {
+                      "display": "flex",
+                      "justify-content": "space-between",
+                      "align-items": "center",
+                      "&:not(.collapsed)": {
+                        ".mbr-iconfont": {
+                          "transform": "rotate(-45deg)"
+                        }
+                      },
+                      ".panel-title-edit": {
+                        "margin-bottom": "0"
+                      },
+                      ".mbr-iconfont": {
+                        "font-size": "24px",
+                        "transition": "all 0.3s ease-out"
+                      }
+                    }
+                  },
+                  ".panel-collapse": {
+                    ".panel-body": {
+                      "margin-bottom": "50px",
+                      "@media (max-width: 992px)": {
+                        "margin-bottom": "32px"
+                      },
+                      ".mbr-text": {
+                        "margin-bottom": "50px",
+                        "@media (max-width: 992px)": {
+                          "margin-bottom": "32px"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#3d4045",
+              "text-align": "center"
+            },
+            ".panel-title-edit, .mbr-iconfont": {
+              "color": "#3d4045",
+              "text-align": "left"
+            },
+            ".mbr-text": {
+              "color": "#3d4045",
+              "text-align": "left"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tutorm5 list2\" group=\"List\" plugins=\"mbr-switch-arrow, mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<header>Items</header>\n\t\t<select title=\"Amount\" name=\"cardAmount\">\n\t\t\t<option value=\"1\" selected>1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Border Color\" value=\"#838383\" name=\"border\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12\">\n\t\t\t\t<div class=\"title-wrapper\">\n\t\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>\n\t\t\t\t\t\tA Pénzmosási törvényről</b></h3>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Ki a tényleges tulajdonos?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>A tényleges tulajdonos (röviden: TT) minden esetben természetes személy, azaz magánszemély.<br></b> \n<br>Míg egy cég tulajdonosa lehet egy másik (akár magyar, akár külföldi) cég, addig a tényleges tulajdonos kizárólag magánszemély lehet.<br>\n<br>A Pénzmosási törvény hatálya alá tartozó szolgáltatók legfontosabb feladata, hogy azonosítsák egy cég tényleges tulajdonosát, illetve, hogy ezt az információt ellenőrizzék nyilvános adatbázisokban, vagy a bemutatott okiratok alapján. \n<br>\n<br>A következő általános irányelvek mentén a legtöbb olyan szervezetnél meg lehet állapítani a tényleges tulajdonos személyét, amikre nem vonatkoznak egyedi szabályok. Ezután részletezzük a speciálisabb tevékenységeket, cégformákat (alapítvány, bizalmi vagyonkezelő, Zrt., Bt.).<br>\n<br><b>1.\tÁltalános irányelvek a tényleges tulajdonos meghatározására:\n<br></b>\n<br>●&nbsp; az a személy, akinek a tulajdoni hányada vagy a szavazati joga eléri a 25%-ot, vagy egyéb módon tényleges irányítást gyakorol a gazdasági társaság felett\n<br>●&nbsp; aki meghatározó befolyással rendelkezik a szervezetben, pl. jogosult a vezető tisztségviselők, felügyelőbizottság többségének megválasztására, VAGY megállapodás alapján azonosan szavaz több taggal, akiknek a befolyása összesen meghaladja az 50%-ot<br>●&nbsp; ha a fentiek közül egyik sem teljesül, akkor a képviselőt kell tényleges tulajdonosnak tekinteni\n<br>●&nbsp; ha más gyakorolja a tényleges irányítást, akkor ezt a személyt kell tényleges tulajdonosnak tekinteni (függetlenül az előző 3 esettől)\n<br>\n<br><b>2.\tAlapítványok:<br></b>\n<br>Az alapítványokra - felépítésüknél fogva - speciális szabályozás vonatkozik. Egy alapítvány tényleges tulajdonosának az alábbiakat kell tekinteni:\n<br>\n<br>●&nbsp; az alapítvány vagyonának kedvezményezettjét (legalább 25%-ban)\n<br>●&nbsp; akinek érdekében az alapítványt létrehozták\n<br>●&nbsp; aki tagja az alapítvány kezelő szervének, vagy befolyást gyakorol az alapítvány vagyonának legalább 25%-a felett (pl. bankszámla feletti rendelkező)\n<br>●&nbsp; a fentiek hiányában az alapítvány képviselője\n<br>●&nbsp; vagy aki egyéb módon meghatározó befolyással rendelkezik \n<br>\n<br><b>3.\tBizalmi vagyonkezelők: \n<br></b>\n<br>●&nbsp; a vagyonrendelő ÉS\n<br>●&nbsp; a vagyonkezelő ÉS\n<br>●&nbsp; a kedvezményezett, vagy azok csoportja ÉS\n<br>●&nbsp; az a személy, aki a kezelt vagyon felett tényleges ellenőrzést gyakorol ÉS\n<br>●&nbsp; a vagyonkezelést ellenőrző személyek \n<br>\n<br>Bizalmi vagyonkezelők esetében a törvény nem tesz különbséget a fenti személyek / szervezetek között, így mindannyiukat tényleges tulajdonosnak kell tekinteni. Amennyiben a fentiek közül bármelyik szereplő cég, úgy annak a cégnek a tényleges tulajdonosát kell azonosítani. \n<br>\n<br><b>4.\t Bt.-k, részvénytársaságok, egyesületek\n<br></b>\n<br>Részvénytársaságok, betéti társaságok, egyesületek esetén sem a Pmt., sem a Ptk. nem tesz különbséget, így ebben az esetben a tényleges tulajdonos meghatározása az 1. pontban részletezett általános irányelvek szerint kell történjen.<br></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 1\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Ki tartozik a törvény hatálya alá?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Magyarországon több tízezer szolgáltató tartozik a törvény hatálya alá, alapvetően olyanok, akik:\n<br>\n<br>1. vagy folyamatos <b>rálátással rendelkeznek ügyfeleik pénzmozgásaira</b>,\n<br>2. vagy akik <b>nagy összegű tranzakciók</b> bonyolításában játszanak szerepet\n<br>\n<br>Az alábbi szolgáltatók kötelezettek például a Pénzmosási törvény által előírt adminisztrációra:\n<br>\n<br>- könyvelők, könyvvizsgálók, adótanácsadók\n<br>- ingatlanügylettel kapcsolatos szolgáltatók\n<br>- székhelyszolgáltatók\n<br>- árukereskedők, nemesfémkereskedők\n<br>- és természetesen pénzintézetek, egyéb pénzügyi szolgáltatók<br></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 2\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Mik a legfontosabb teendőim?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">A teendőket alapvetően 3 részre tudjuk bontani:\n<br>\n<br><b>1. A tevékenység megkezdése előtti teendők\n<br></b>- a VPOP_KSZ17 nyomtatvány beküldése\n<br>- a Belső szabályzat beküldése\n<br>- AFADREG beküldése - regisztráció a Tényleges Tulajdonosi Nyilvántartásba\n<br>\n<br><b>2. Szerződéskötéskor: ügyfélátvilágítási teendők\n<br></b>- ügyfélátvilágítási adatlap kitöltése\n<br>- szükséges dokumentumok beszerzése\n<br>- ENSZ-EU szűrés (Kit. szerinti szűrés) futtatása\n<br>- tényleges tulajdonos ellenőrzése\n<br>- kockázati besorolás\n<br>\n<br><b>3. Az üzleti kapcsolat alatt: monitoring\n<br></b>- ügyféladatok naprakészen tartása\n<br>- aktuális dokumentumok beszerzése\n<br>- ENSZ-EU szűrés pár hetente (a lista frissülésekor)\n<br>- rendszeres kockázati felülvizsgálat\n<br>- üzleti kapcsolat folyamatos nyomonkövetése - gyanús tevékenység esetén be kell jelenteni az ügyfelet</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 3\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>De miért nekem kell ezzel foglalkoznom?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">A legtöbb szolgáltatóban felmerül a kérdés, hogy egy ennyi adminisztrációval járó törvény, illetve az abban foglalt kötelezettségek miért az ő, és miért nem az állami szervek feladata.<br>\n<br>Tény, hogy az elmúlt évtizedben bevezetett automatizmusok, illetve az online számla bevezetésével sok adat áll az adóhatóság, valamint a cégbíróság rendelkezésére. Ugyanakkor a törvény számos különböző forrásból származó adatbázis, nyilvántartás, lista ellenőrzését írja elő, amelyek folyamatosan változnak, így egyelőre nem áll rendelkezésre átfogó rendszer az állami oldalról. <br><br>Ezen túl vannak olyan tényezők, melyeket a hatóságok valóban nem (vagy nem időben) képesek látni, ilyen például a strómanok által vezetett cégek, a gyakori, nagy összegű készpénzfelvételek, bizonylat nélkül érkező, nagy összegű utalások, tagi kölcsönök a cég számlájára, valós tevékenység nélküli tranzakciók, stb. Ezt szem előtt tartva kerültek bevonásra a fenti szolgáltatók a pénzmosás elleni küzdelembe&nbsp;<br></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card\" mbr-if=\"cardAmount > 4\">\n\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n\t\t\t\t\t\t\t<a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n\t\t\t\t\t\t\t\t<h4 class=\"panel-title-edit mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-title-edit, .mbr-iconfont\"><b>Ki ellenőrzi a Pénzmosási törvénynek való megfelelést?</b></h4>\n\t\t\t\t\t\t\t\t<span class=\"sign mbr-iconfont mobi-mbri-plus mobi-mbri\"></span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFive\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n\t\t\t\t\t\t\t<div class=\"panel-body\">\n\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">\n\t\t\t\t\t\t\t\t\tAssessment and evaluation are integral components of any training program.\n\t\t\t\t\t\t\t\t\tParticipants are typically assessed to gauge their understanding and progress. This\n\t\t\t\t\t\t\t\t\tcan be done through quizzes, exams, practical assessments, or other means, depending\n\t\t\t\t\t\t\t\t\ton the program's goals. Evaluation also involves gathering feedback from\n\t\t\t\t\t\t\t\t\tparticipants to identify areas of improvement and make necessary adjustments to the\n\t\t\t\t\t\t\t\t\tprogram.\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "list2-1o",
+          "_isUserblock": true,
+          "_cid": "uucm6aslfk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".item": {
+              "margin-bottom": "2rem"
+            },
+            "@media (max-width: 767px)": {
+              ".item": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-content": {
+              "margin-top": "2rem",
+              "padding": "0 2.25rem 2.25rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "padding-top": "1rem",
+                "margin-top": "1rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "padding-top": "1rem",
+                "margin-top": "1rem"
+              },
+              "display": "flex",
+              "flex-direction": "column",
+              "height": "100%"
+            },
+            ".item-wrapper": {
+              "position": "relative",
+              "background": "@cardsBg",
+              "height": "100%",
+              "display": "flex",
+              "flex-flow": "column nowrap",
+              ".item-footer": {
+                "margin-top": "auto"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#3d4045",
+              "text-align": "center"
+            },
+            ".mbr-text, .item .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".mbr-number": {
+              "color": "#c46a4d"
+            },
+            ".mbr-section-subtitle, .mbr-section-head .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".mbr-text, .mbr-card-btn": {
+              "text-align": "left"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".mbr-text, .item-footer .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".card-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "numbers01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"numbers01\" group=\"Numbers\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n\t\t<select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"12\">1</option>\n\t\t\t<option value=\"6\">2</option>\n\t\t\t<option value=\"4\" selected>3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n\t\t<input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showMainButtons\" title=\"Buttons\">\n\t\t<header>Cards</header>\n\t\t<input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\">\n\t\t<input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n\t\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n\t\t<input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ebebeb\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" parallax name=\"bg\" required>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 content-head\">\n\t\t\t\t<div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle || showMainButtons\">\n\t\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Honnan tájékozódhatok bővebben?</b></h4>\n\t\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-head .mbr-section-btn\">Célunk, hogy megoldást nyújtsunk bármilyen, a Pénzmosási törvénnyel kapcsolatos problémára.\n<div>Az alábbiakban összegyűjtöttük az összes olyan információforrást és szolgáltatást, melyre szüksége lehet az egyszerűbb megfeleléshez.</div></h5>\n\t\t\t\t\t<div class=\"mbr-section-btn align-center item-footer mb-0 mt-4\" mbr-if=\"showMainButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t<a href class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\">Get Started</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}} active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>01.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>Pénzmosási törvény FÓRUM</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tIngyenes tudásanyagok, információk nyomtatványokról, NAV állásfoglalások.</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#article03-h\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>01.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>Pmt. tudástár - eBook</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tMinden teendő, lista, nyomtatvány, ellenőrzési tapasztalat egy helyen. Szakértőktől, 106 oldalon.</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#features3-k\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>02.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>Pmt. ellenőrzés képviselet</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tSegítség, asszisztencia NAV ellenőrzés esetén, legyen akár kérdőíves, akár helyszíni.<br>VAGY IDE KÉREK SZÖVEGET</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#content9-16\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>02.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>Pénzmosási törvény tanácsadás</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tIDE KÉREK SZÖVEGET</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#content9-16\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>02.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>identiGO - Pmt. nyilvántartó</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tAutomatikus ENSZ-EU szűrés naponta, magas kockázatra figyelmeztetés, értesítés Pmt. szerinti adat változásakor.</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#features1-1f\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<b>02.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title\"><b>Fontos linkek</b></h4>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style mt-0 mb-3\" data-app-selector=\".card-text, .item .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\tEllenőrizendő listák elérhetőségei, beküldendő nyomtatványok, felügyeleti szerv adatai.</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"index.html#content3-1t\" class=\"btn item-btn btn-secondary-outline\" data-app-placeholder=\"Type Text\">Bővebben &gt;&gt;</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "uubxSfwPXR",
+          "_anchor": "numbers01-1h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "article03",
+          "_sourceTheme": "essencem5",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 80px",
+                "@media (max-width: 1200px)": {
+                  "padding": "0 40px"
+                },
+                "@media (max-width: 992px)": {
+                  "padding": "0 22px"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 22px"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".content-wrapper": {
+              ".line-wrapper": {
+                "margin-bottom": "80px",
+                "text-align": "center",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "40px"
+                },
+                ".line-wrap": {
+                  "display": "inline-flex",
+                  "width": "1px",
+                  "height": "60px",
+                  "background-color": "@line"
+                }
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              },
+              ".icon-wrapper": {
+                ".mbr-iconfont": {
+                  "display": "inline-flex",
+                  "width": "40px",
+                  "height": "40px",
+                  "font-size": "30px",
+                  "color": "@icon"
+                }
+              },
+              ".mbr-text": {
+                "margin-bottom": "0"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#3d4045",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .icon-wrapper": {
+              "text-align": "center",
+              "color": "#3d4045"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article03 essencem5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"icon\" condition=\"showIcon\" selected>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Line\" name=\"showLine\" checked>\n        <input type=\"color\" title=\"Line Color\" value=\"#ffffff\" name=\"line\" condition=\"showLine\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"content-wrapper\">\n                    <div class=\"line-wrapper\" mbr-if=\"showLine\">\n                        <div class=\"line-wrap\"></div>\n                    </div>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .icon-wrapper\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        <b>Pénzmosási törvény FÓRUM</b></h2>\n                    <div class=\"icon-wrapper\" mbr-if=\"showIcon\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-growing-chart mobi-mbri\"></span>\n                    </div>\n                    <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-4\" mbr-if=\"showText\">\n                        Fórumunkat azzal a céllal hoztuk létre, hogy választ adjunk a leggyakrabban feltett kérdésekre, amik felmerülnek a Pénzmosási törvénnyel kapcsolatban.&nbsp;<br><br>Folyamatosan figyeljük a keresési trendeket és gyűjtjük a visszajelzéseket annak érdekében, hogy egyszerű, érthető,&nbsp; gyorsan elérhető információt nyújtsunk azokban a kérdésekre, melyek a legjobban érdeklik a szolgáltatókat.&nbsp;<br><br>Az alábbiakban egy kis betekintő a legnagyobb érdeklődésre számot tartó cikkeinkről:</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "article03-h",
+          "_isUserblock": true,
+          "_cid": "utVaWrtdvP",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "list02",
+          "_sourceTheme": "healthm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list02 healthm5\" group=\"List\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showCardText\" checked>\n        <input type=\"checkbox\" title=\"Card Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card BG\" value=\"#ffffff\" name=\"card\" selected>\n        <input type=\"color\" title=\"Border Color\" value=\"#EDECEB\" name=\"border\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/healthm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/healthm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"items-wrapper\">\n                    <div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"card-box\">\n                                <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Pmt. - minden fontos teendő és nyomtatvány egy helyen</b></h4>\n                                <p class=\"item-text mbr-fonts-style\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".item-text, .mbr-section-btn\">Összegyűjtöttük a Pénzmosási törvény által előírt teendőket, nyomtatványokat, ellenőrizendő listákat.</p>\n                            </div>\n                            <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"https://forum.identigo.hu/t/pmt-minden-fontos-teendo-es-nyomtatvany-egy-helyen/158\" class=\"btn item-btn btn-secondary\" data-app-placeholder=\"Type Text\" target=\"_blank\">Tovább a cikkhez</a></div>\n                        </div>\n                    </div>\n                    <div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"card-box\">\n                                <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Mi az az AFADREG adatlap? Mikor kell benyújtanom?</b></h4>\n                                <p class=\"item-text mbr-fonts-style\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".item-text, .mbr-section-btn\">\n                                    Az AFADREG adatlappal lehet regisztráltni a Központi Tényleges Tulajdonosi Nyilvántartásba.&nbsp;</p>\n                            </div>\n                            <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"https://forum.identigo.hu/t/mi-az-az-afadreg-adatlap-mikor-kell-benyujtanom/91\" class=\"btn item-btn btn-secondary\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                                    Tovább a cikkhez\n                                </a></div>\n                        </div>\n                    </div>\n                    <div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"card-box\">\n                                <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>VPOP_KSZ17 - mikor és hogyan kell benyújtanom?</b></h4>\n                                <p class=\"item-text mbr-fonts-style\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".item-text, .mbr-section-btn\">\n                                    Információk a Kijelölt személy bejelentéséhez szükséges nyomtatványról - mikor, kinek és hogyan kell benyújtani.</p>\n                            </div>\n                            <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"https://forum.identigo.hu/t/vpop-ksz17-mikor-es-hogyan-kell-benyujtanom/217\" class=\"btn item-btn btn-secondary\" data-app-placeholder=\"Type Text\" target=\"_blank\">Tovább a cikkhez</a></div>\n                        </div>\n                    </div>\n                    <div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"card-box\">\n                                <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>TTNY lekérdezés - mikor szükséges? NAV állásfoglalás</b></h4>\n                                <p class=\"item-text mbr-fonts-style\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".item-text, .mbr-section-btn\">A TTNY lekérdezést csak bizonyos esetekben kell megtenni, nem kötelező az összes ügyfél esetén. NAV állásfoglalás.</p>\n                            </div>\n                            <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"https://forum.identigo.hu/t/ttny-lekerdezes-mikor-szukseges-nav-allasfoglalas/133\" class=\"btn item-btn btn-secondary\" data-app-placeholder=\"Type Text\" target=\"_blank\">Tovább a cikkhez</a></div>\n                        </div>\n                    </div>\n                    <div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"card-box\">\n                                <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Mi az a TTNYELT nyomtatvány? Mikor kell benyújtanom?</b></h4>\n                                <p class=\"item-text mbr-fonts-style\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".item-text, .mbr-section-btn\">Mi a teendő, ha eltérést találok a Központi Tényleges Tulajdonosi Nyilvántartásban? Hogy kell benyújtani a TTNYELT adatlapot?</p>\n                            </div>\n                            <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-4\"><a href=\"https://forum.identigo.hu/t/mi-az-a-ttnyelt-nyomtatvany-mikor-kell-benyujtanom/113\" class=\"btn item-btn btn-secondary\" data-app-placeholder=\"Type Text\" target=\"_blank\">Tovább a cikkhez</a></div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 64px",
+                "@media (max-width: 992px)": {
+                  "padding": "0 32px"
+                },
+                "@media (max-width: 768px)": {
+                  "padding": "0 24px"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 32px"
+              },
+              "@media (max-width: 768px)": {
+                "padding": "0 24px"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".item": {
+              "margin-top": "24px",
+              "&:first-child": {
+                "margin-bottom": "0"
+              },
+              ".item-wrapper": {
+                "padding": "40px",
+                "background-color": "@card",
+                "height": "100%",
+                "border": "1px solid @border",
+                "border-radius": "2rem",
+                "display": "flex",
+                "justify-content": "space-between",
+                "align-items": "center",
+                "@media (max-width: 992px)": {
+                  "padding": "24px",
+                  "display": "block"
+                },
+                ".card-box": {
+                  "width": "70%",
+                  "@media (max-width: 992px)": {
+                    "width": "100%",
+                    "margin-bottom": "16px"
+                  },
+                  ".item-title": {
+                    "margin-bottom": "0"
+                  },
+                  ".item-text": {
+                    "opacity": ".5",
+                    "margin-bottom": "0"
+                  }
+                },
+                ".mbr-section-btn": {
+                  "width": "30%",
+                  "text-align": "right",
+                  "@media (max-width: 992px)": {
+                    "width": "100%",
+                    "text-align": "left"
+                  },
+                  ".btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-black, .btn-white": {
+                    "border": "1px solid @border !important"
+                  }
+                }
+              }
+            },
+            ".item-menu-overlay": {
+              ".btn-wrapper": {
+                "margin-top": "-3%"
+              }
+            },
+            ".item-title": {
+              "color": "#18212d"
+            },
+            ".item-text": {
+              "color": "#18212d"
+            }
+          },
+          "_cid": "utVdVqPM5D",
+          "_anchor": "list02-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = \"video\")": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".title": {
+              ".num": {
+                "width": "100%",
+                "display": "block"
+              },
+              ".card-title": {
+                "z-index": "1"
+              }
+            },
+            ".item-wrapper": {
+              "margin-bottom": "2rem"
+            },
+            ".num": {
+              "color": "#232323"
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "*": {
+                "text-align": "center !important"
+              },
+              ".content-column": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "features3",
+          "_sourceTheme": "tutorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tutorm5 features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"12\">1</option>\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Button\" name=\"showButton\" checked>\n    <header>Step</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showCardText\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/tutorm5/components/_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=-BSQlJxCDcI\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/tutorm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n  </div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"card-wrapper pb-3 mb-5\">\n          <div class=\"card-box align-center\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .card-box\"><b>Pénzmosási törvény TUDÁSTÁR - eBook</b></h4>\n            <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Minden, amit tudnia kell a Pénzmosás elleni törvényről – \n<br><b>érthetően, egy helyen</b>.<br>Szakértőktől, 100+ oldalon.</p>\n            <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButton\"><a class=\"btn btn-secondary\" href=\"https://tudastar.identigo.hu/termek/penzmosas-elleni-torveny-tudastar-ebook/\" data-app-placeholder=\"Type Text\" target=\"_blank\">Tovább a könyvhöz &gt;&gt;</a></div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row content-row\">\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb active\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>Az összes teendő&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">A szolgáltatás megkezdésétől kezdve az ügyfélátvilágításon át a monitoring feladatokig, gyakorlatiasan, példákkal.<br></p>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>Szükséges nyomtatványok&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">Ügyfélátvilágítási adatlap, TTNYELT, AFADREG - és az összes szükséges nyomtatvány elérhetősége.<br></p>\n        </div>\n      </div>\n      \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>Kitöltési útmutatók&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">Részletes kitöltési segédlet a Pmt. megfeleléshez szükséges valamennyi nyomtatványhoz.<br></p>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>Ellenőrizendő listák&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">A kapcsolódó listák elérhetőségei: kiemelt és offshore országok, ENSZ-EU szankciós lista, stb.<br></p>\n        </div>\n      </div>\n      \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>NAV ellenőrzési gyakorlat&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">Mit ellenőriznek, milyen kérdésekre kell válaszolni, hogyan kell felkészülni, mik a leggyakoribb hibák.<br></p>\n        </div>\n      </div>\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\" mbr-if=\"showCardTitle||showCardText\">\n          <div class=\"title mb-3\">\n            <span class=\"num mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-text data-app-selector=\".num\"><b>...és még sok más&nbsp;</b><br></span>\n          </div>\n          <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n            <b>Title</b>\n          </h4>\n          <p class=\"mbr-text card-text mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showCardText\" data-app-selector=\".card-text\">Gyakorlati példák, ellenőrzési statisztikák és számos fontos információ a Pénzmosási törvénnyel kapcsolatban.<br></p>\n        </div>\n      </div>\n      \n\n\n    </div>\n  </div>\n</section>",
+          "_cid": "utZOrb8g9F",
+          "_anchor": "features3-k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container, .container-fluid": {
+              "padding": "0 60px",
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              }
+            },
+            ".row": {
+              "padding": "50px 0",
+              "margin": "0",
+              "& when (@showBorder)": {
+                "border-top": "1px solid @border",
+                "border-bottom": "1px solid @border"
+              },
+              "@media (max-width: 992px)": {
+                "margin": "0"
+              }
+            },
+            ".card": {
+              "padding": "0"
+            },
+            ".embla__slide": {
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "min-width": "350px",
+              "max-width": "350px",
+              "@media (max-width: 768px)": {
+                "min-width": "100%",
+                "max-width": "100%",
+                "margin-left": "1rem !important",
+                "margin-right": "1rem !important"
+              },
+              ".card-wrap": {
+                ".item-wrapper": {
+                  ".image-wrap": {
+                    "img": {
+                      "height": "450px",
+                      "object-fit": "cover",
+                      "@media (max-width: 992px)": {
+                        "height": "300px"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            ".embla__button--next, .embla__button--prev": {
+              "display": "flex"
+            },
+            ".embla__button": {
+              "top": "-0.8rem",
+              "width": "25px",
+              "height": "25px",
+              "margin-top": "-1.5rem",
+              "font-size": "25px",
+              "background-color": "transparent",
+              "color": "@infoColor",
+              "border": "none",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "position": "absolute",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "& when not (@arrows)": {
+                "display": "none"
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
+              },
+              "&:disabled": {
+                "cursor": "default",
+                "display": "none"
+              },
+              "&:hover": {
+                "background": "transparent",
+                "color": "@infoColor",
+                "opacity": ".5"
+              },
+              "&.embla__button--prev": {
+                "left": "auto",
+                "right": "3rem"
+              },
+              "&.embla__button--next": {
+                "right": "0"
+              },
+              "@media (max-width: 767px)": {
+                "top": "-0.8rem"
+              }
+            },
+            ".embla": {
+              "position": "relative",
+              "width": "100%"
+            },
+            ".embla__viewport": {
+              "overflow": "hidden",
+              "width": "100%"
+            },
+            ".embla__viewport.is-draggable": {
+              "cursor": "grab"
+            },
+            ".embla__viewport.is-dragging": {
+              "cursor": "grabbing"
+            },
+            ".embla__container": {
+              "display": "flex",
+              "user-select": "none",
+              "-webkit-touch-callout": "none",
+              "-khtml-user-select": "none",
+              "-webkit-tap-highlight-color": "transparent"
+            }
+          },
+          "_name": "slider2",
+          "_sourceTheme": "deepm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider2 mbr-embla deepm5\" group=\"Sliders & Galleries\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"embla\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\">\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\">\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\" checked>\n        <header>Card</header>\n        <input type=\"range\" name=\"gap\" title=\"Gap\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#3d4045\" name=\"border\" condition=\"showBorder\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 card\">\n                <div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\" data-contain-scroll=\"trimSnaps\">\n                    <div class=\"embla__viewport\">\n                        <div class=\"embla__container\">\n                            \n                            \n                            \n                            \n                            <div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"card-wrap\">\n                                    <div class=\"item-wrapper position-relative\">\n                                        <div class=\"image-wrap\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/pmt-tudastar-borito-1000x1596.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div><div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"card-wrap\">\n                                    <div class=\"item-wrapper position-relative\">\n                                        <div class=\"image-wrap\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/tartalomjegyzek1-1-583x638.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div><div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"card-wrap\">\n                                    <div class=\"item-wrapper position-relative\">\n                                        <div class=\"image-wrap\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/3oldal-583x761.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <button class=\"embla__button embla__button--prev\">\n                        <span class=\"mbr-iconfont mobi-mbri-left mobi-mbri\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only visually-hidden visually-hidden\">Previous</span>\n                    </button>\n                    <button class=\"embla__button embla__button--next\">\n                        <span class=\"mbr-iconfont mobi-mbri-right mobi-mbri\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only visually-hidden visually-hidden\">Next</span>\n                    </button>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uu19v3rqwW",
+          "_anchor": "slider2-15",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container, .container-fluid": {
+              "position": "relative",
+              "padding": "0 60px",
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              }
+            },
+            ".row": {
+              "position": "relative",
+              "justify-content": "center",
+              "padding": "50px 10px",
+              "overflow": "hidden",
+              "margin": "0",
+              "& when (@showBorder)": {
+                "border": "1px solid @border",
+                "border-radius": "10px"
+              },
+              "@media (max-width: 992px)": {
+                "padding": "85px 8px"
+              }
+            },
+            ".title-wrapper": {
+              "display": "flex",
+              "flex-direction": "column",
+              "justify-content": "center",
+              "height": "100%",
+              "padding": "0 80px",
+              "@media (max-width: 1200px)": {
+                "padding": "0"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "50px",
+                "@media (max-width: 1200px)": {
+                  "margin-bottom": "20px"
+                }
+              },
+              ".mbr-text": {
+                "margin-bottom": "20px"
+              }
+            },
+            ".image-wrapper": {
+              "display": "flex",
+              "align-items": "center",
+              "height": "100%",
+              "@media (max-width: 1200px)": {
+                "margin-bottom": "50px",
+                "height": "auto"
+              },
+              "img": {
+                "height": "450px",
+                "object-fit": "cover",
+                "border-radius": "10px",
+                "@media (max-width: 992px)": {
+                  "height": "300px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#3d4045"
+            },
+            ".mbr-text": {
+              "color": "#3d4045"
+            }
+          },
+          "_name": "content9",
+          "_sourceTheme": "deepm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content9 deepm5\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\">\n        <input type=\"color\" title=\"Border Color\" value=\"#3D4045\" name=\"border\" condition=\"showBorder\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/crespo-zsuzsanna-900x599.jpg\" alt=\"Mobirise\">\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Pmt. tanácsadás - szakértőtől</b></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-4\" mbr-if=\"showText\"><b>Dr. Crespo Zsuzsanna Ágnes&nbsp;</b>digitális adatvédelmi szakjogász, pénzmosás és terrorizmusfinanszírozás elleni szakértő.<br>\n<br>Több száz ellenőrzéssel a háta mögött a legtapasztaltabb Pmt. szakembernek számít Magyarországon.<br>\n<br>Számos szolgáltatónak segített már a Pmt.-nek való megfelelésben, illetve ellenőrzéseken, valamint folyamatos megfelelésüket biztosítja a törvényi változásoknak megfelelően.&nbsp;<br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n                        <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                            CONTACT US\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uu1dZQtE01",
+          "_anchor": "content9-16",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "features15",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features15\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#6592e6\" selected condition=\"showIcon\">\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\">3</option>\n            <option value=\"6\" selected>2</option>\n            <option value=\"12\">1</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"item features-without-image mb-5 col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-globe-2 mobi-mbri\" mbr-if=\"showIcon\" style=\"font-size: 60px;\"></span>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Pmt. tanácsadás</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">IDE KÉREK SZÉPEN SZÖVEGET</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image mb-5 col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-target mobi-mbri\" mbr-if=\"showIcon\" style=\"font-size: 60px;\"></span>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Pmt. ellenőzés</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">IDE KÉREK SZÉPEN SZÖVEGET</h5>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".item-wrapper": {
+              "display": "flex",
+              "@media (max-width: 991px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".mbr-iconfont": {
+              "font-size": "2rem",
+              "color": "@iconColor",
+              "padding-right": "1.5rem"
+            },
+            ".card-title": {
+              "color": "#3d4045"
+            },
+            ".card-text": {
+              "color": "#c46a4d"
+            }
+          },
+          "_cid": "uu5kMeaf1N",
+          "_anchor": "features15-1a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-iconfont": {
+              "font-size": "34px",
+              "transition": "color .3s"
+            },
+            ".mbr-section-title": {
+              "margin": "0"
+            },
+            ".underline": {
+              "margin-top": "-0.5rem",
+              "margin-bottom": "-0.5rem",
+              ".line": {
+                "width": "3rem",
+                "height": "2px",
+                "background": "@underlineColor",
+                "display": "inline-block"
+              }
+            },
+            ".card-img": {
+              "text-align": "left"
+            },
+            ".row-item": {
+              "padding-bottom": "2rem",
+              "&:hover": {
+                ".card-img .mbr-iconfont": {
+                  "color": "@onHoverColor !important"
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".card-img,.mbr-text,.mbr-card-title, .mbr-section-subtitle,.mbr-section-title, .underline": {
+                "text-align": "center !important"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title,.underline": {
+              "color": "#3d4045"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#3d4045"
+            },
+            ".mbr-card-title,.card-img": {
+              "color": "#3d4045"
+            },
+            ".mbr-text": {
+              "color": "#3d4045"
+            }
+          },
+          "_name": "features1",
+          "_sourceTheme": "portfoliom4",
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Animated Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showSectionTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" checked condition=\"showSectionTitle\">\n        <input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#444444\" condition=\"showUnderline && showSectionTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Content Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"swIcon\" checked>\n        <input type=\"color\" title=\"Icons On Hover\" name=\"onHoverColor\" value=\"#c46a4d\" condition=\"swIcon\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/portfoliom4/components/_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/portfoliom4/components/_images/background2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    \n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-fonts-style mbr-section-title align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSectionTitle\" data-app-selector=\".mbr-section-title,.underline\"><b>identiGO - Pmt. nyilvántartó</b></h2>\n         <div class=\"underline align-center\" mbr-if=\"showUnderline && showSectionTitle\">\n             <div class=\"line\"></div>\n         </div>\n\n        <h3 class=\"mbr-fonts-style mbr-section-subtitle align-center mbr-light pt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Automatizálja a Pénzmosási törvénnyel kapcsolatos adminisztrációt, <br>hogy több ideje maradjon a valódi munkavégzésre.&nbsp;</h3>\n\n        <div class=\"row justify-content-center pt-5\">\n            <div class=\"col-md-6 row-item\" mbr-if=\"cardsAmount > 0\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3',\n                             'col-lg-6': cardsAmount == '2',\n                             'col-lg-6': cardsAmount =='1'}\">\n                <div class=\"card-img pb-3 align-left\">\n                    <span mbr-if=\"swIcon\" mbr-icon class=\"mbr-iconfont mobi-mbri-paper-plane mobi-mbri\"></span>\n                </div>\n                <h4 class=\"mbr-fonts-style mbr-card-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title,.card-img\"><b>Napi ENSZ-EU szűrés<br></b><br></h4>\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Automata Kit. szűrés napi rendszerességgel, NAV-kompatibilis táblázatban rögzített eredményekkel.&nbsp;</p>\n            </div>\n\n            <div class=\"col-md-6 row-item\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3',\n                             'col-lg-6': cardsAmount == '2',\n                             'col-lg-6': cardsAmount =='1'}\">\n                <div class=\"card-img pb-3 align-left\">\n                    <span mbr-if=\"swIcon\" mbr-icon class=\"mbr-iconfont mobi-mbri-protect mobi-mbri\"></span>\n                </div>\n                <h4 class=\"mbr-fonts-style mbr-card-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title,.card-img\"><b>Automatikus magas besorolás</b></h4>\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><br>Objektív kockázati tényező fennállása esetén automatikusan magas kockázatba soroljuk ügyfelét.&nbsp;</p>\n            </div>\n\n            <div class=\"col-md-6 row-item\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3',\n                             'col-lg-6': cardsAmount == '2',\n                             'col-lg-6': cardsAmount =='1'}\">\n                <div class=\"card-img pb-3 align-left\">\n                    <span mbr-if=\"swIcon\" mbr-icon class=\"mbr-iconfont mobi-mbri-search mobi-mbri\"></span>\n                </div>\n                <h4 class=\"mbr-fonts-style mbr-card-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title,.card-img\"><b>Cégfigyelés</b><br><br></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Értesítés, ha Pmt. szerinti adat változik a cégben, hogy ne kelljen kézzel nyomonkövetni a változásokat.</p>\n            </div>\n\n            <div class=\"col-md-6 row-item\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3',\n                             'col-lg-6': cardsAmount == '2',\n                             'col-lg-6': cardsAmount =='1'}\">\n                <div class=\"card-img pb-3 align-left\">\n                    <span mbr-if=\"swIcon\" mbr-icon class=\"mbr-iconfont mbrib-info\"></span>\n                </div>\n                <h4 class=\"mbr-fonts-style mbr-card-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-card-title,.card-img\"><b>Figyelmeztetés teendőkre</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><br>Emlékeztető közelgő éves felülvizsgálat, hiányzó adatok, lejáró igazolványok, egyéb teendők esetén.&nbsp;</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uu5IjSYpYG",
+          "_anchor": "features1-1f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "gallery02",
+          "_sourceTheme": "flexm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"gallery02 flexm5\" group=\"Gallery & Slider\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/flexm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#3d4045\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/flexm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#F2F2F2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row items-wrap\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"items-wrapper\">\n                    \n                    \n                    \n                    \n                    <div class=\"item features-without-image active\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/identigo6-563x370.png\" alt=\"Mobirise Website Builder\">\n                            </div>\n                            <div class=\"item-content\">\n                                <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc\">\n                                    Ügyfelek - főoldal</p>\n                            </div>\n                        </div>\n                    </div><div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/identigo-563x368.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"1\" data-bs-slide-to=\"2\">\n                            </div>\n                            <div class=\"item-content\">\n                                <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc\">\n                                    Ügyféladatlap</p>\n                            </div>\n                        </div>\n                    </div><div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/identigo2-563x368.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                            </div>\n                            <div class=\"item-content\">\n                                <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc\">\n                                    Képviselők, tulajdonosok</p>\n                            </div>\n                        </div>\n                    </div><div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/identigo3-563x368.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"3\" data-bs-slide-to=\"3\">\n                            </div>\n                            <div class=\"item-content\">\n                                <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc\">\n                                    Dokumentumtár</p>\n                            </div>\n                        </div>\n                    </div><div class=\"item features-without-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/identigo7-563x369.png\" alt=\"Mobirise Website Builder\" data-slide-to=\"4\" data-bs-slide-to=\"5\">\n                            </div>\n                            <div class=\"item-content\">\n                                <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc\">\n                                    Ügyfélátvilágítási adatlap</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".items-wrap": {
+              "justify-content": "center"
+            },
+            ".items-wrapper": {
+              "display": "grid",
+              "grid-template-columns": "1fr 1fr 1fr 1fr 1fr",
+              "gap": "32px 16px",
+              "@media (max-width: 1200px)": {
+                "grid-template-columns": "1fr 1fr 1fr"
+              },
+              "@media (max-width: 992px)": {
+                "grid-template-columns": "1fr 1fr"
+              },
+              "@media (max-width: 768px)": {
+                "grid-template-columns": "1fr"
+              }
+            },
+            ".item": {
+              ".item-wrapper": {
+                ".item-img": {
+                  "margin-bottom": "16px",
+                  "img": {
+                    "height": "180px",
+                    "width": "100%",
+                    "object-fit": "cover",
+                    "@media (max-width: 992px)": {
+                      "height": "350px"
+                    }
+                  }
+                },
+                ".item-content": {
+                  "position": "relative",
+                  "z-index": "1",
+                  ".item-desc": {
+                    "margin-bottom": "0",
+                    "opacity": ".7"
+                  }
+                }
+              }
+            },
+            ".item-desc": {
+              "color": "#ffffff"
+            }
+          },
+          "_cid": "uuudG7B5Gi",
+          "_anchor": "gallery02-1q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (min-width: 1000px)": {
+              ".content": {
+                "flex-wrap": "nowrap"
+              },
+              ".section-head": {
+                "width": "50%",
+                "margin-left": "3rem",
+                ".item-btn": {
+                  "width": "10.6rem",
+                  "height": "10.6rem"
+                }
+              },
+              ".toggle-panel": {
+                "width": "50%",
+                "border-top": "2px solid #dcdce0",
+                "margin-left": "4rem",
+                "margin-right": "4rem"
+              }
+            },
+            "@media (max-width: 999px)": {
+              ".content": {
+                "flex-wrap": "wrap"
+              },
+              ".section-head": {
+                "width": "100%",
+                "margin-left": "1rem",
+                "margin-right": "1rem",
+                "position": "relative",
+                "p": {
+                  "width": "70%",
+                  "@media (max-width: 499px)": {
+                    "width": "100%"
+                  }
+                },
+                ".item-btn": {
+                  "width": "8rem",
+                  "height": "8rem",
+                  "position": "absolute",
+                  "top": "1rem",
+                  "right": "0",
+                  "@media (max-width: 499px)": {
+                    "width": "6.5rem",
+                    "height": "6.5rem",
+                    "position": "static",
+                    "margin-top": "-2rem",
+                    "float": "right"
+                  }
+                }
+              },
+              ".toggle-panel": {
+                "width": "100%"
+              }
+            },
+            ".panel-title-edit": {
+              "color": "#28282c"
+            },
+            ".panel-text": {
+              "color": "#3d4045",
+              "padding": "1rem 0"
+            },
+            ".card-header": {
+              "padding-left": "0",
+              "padding-bottom": "1.5rem",
+              "border": "none"
+            },
+            ".card": {
+              "border": "none",
+              "border-bottom": "2px solid #dcdce0",
+              "border-radius": "0"
+            },
+            ".card .card-header": {
+              "background-color": "transparent",
+              "margin-bottom": "0"
+            },
+            ".panel-title": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "space-between"
+            },
+            ".mbr-iconfont": {
+              "padding-left": "1rem",
+              "font-family": "'Moririse2' !important",
+              "font-size": "1.4rem !important",
+              "color": "#dcdce0"
+            },
+            "@media (max-width: 600px)": {
+              ".mbr-section-title": {
+                "letter-spacing": "-1px"
+              }
+            },
+            ".mbr-text": {
+              "color": "#3d4045"
+            }
+          },
+          "_name": "content3",
+          "_sourceTheme": "housem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content3\" group=\"List\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-switch-arrow, mobirise-icons2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <select title=\"Amount\" name=\"cardAmount\">\n             <option value=\"1\">1</option>\n             <option value=\"2\">2</option>\n             <option value=\"3\">3</option>\n             <option value=\"4\">4</option>\n             <option value=\"5\">5</option>\n             <option value=\"6\" selected>6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/housem5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\n            <div class=\"content d-flex justify-content-center\">\n\n                    <div class=\"section-head align-left\" mbr-if=\"showTitle || showSubtitle\">\n                        <h3 class=\"mbr-section-title mb-md-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>FONTOS LINKEK, NYOMTATVÁNYOK</b></h3>\n                        <h4 class=\"mbr-section-subtitle mt-md-2 mb-md-5 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\"><b>NAV Pénzmosás Elleni Iroda</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><b>Telefon: +36 1 430 9466 \n<br>Email: fiu@nav.gov.hu\n<br>Cím: 1033 Budapest, Huszti út 42.\n</b><br>\n<br>A NAV Pénzmosás Elleni Iroda önálló weboldalt tart fenn a Pénzmosási törvény hatálya alá tartozó Szolgáltatók számára. Itt teszi közzé az aktuális nyomtatványokat, friss híreket, hasznos információkat.\n<br>\n<br>A teljes tartalom REGISZTRÁCIÓ után érhető el.\n<br>\n<br><a href=\"https://pei.nav.gov.hu\" class=\"text-warning\" target=\"_blank\">https://pei.nav.gov.hu</a></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href class=\"btn btn-primary item-btn rounded-circle\" target=\"_blank\" data-app-placeholder=\"Type Text\">\n                                <span>About<br>services</span>\n                            </a></div>\n                    </div>\n\n\n                    <div id=\"bootstrap-toggle\" class=\"toggle-panel accordionStyles tab-content\">\n                        <div class=\"card mb-3\">\n                            <div class=\"card-header pt-3\" role=\"tab\" id=\"headingOne\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                    <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>Tevékenység megkezdése előtt benyújtandó nyomtatványok - VPOP_KSZ17 és AFADREG</b></h6>\n                                    <!-- <div class=\"icon-wrap d-flex justify-content-center align-content-center\"> -->\n                                        <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                    <!-- </div> -->\n                                </a>\n                            </div>\n                            <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">A tevékenység megkezdését megelőzően kell benyújtani az alábbi nyomtatványokat:\n<br>\n<br><b><a href=\"https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_vam/VPOP_KSZ17\" class=\"text-warning text-primary\" target=\"_blank\">VPOP_KSZ17 </a></b>- kijelölt személy bejelentése\n<br>\n<br><a href=\"https://nav.gov.hu/penzmosas\" class=\"text-warning\" target=\"_blank\">AFADREG </a>- regisztráció a Központi Tényleges Tulajdonosi Nyilvántartásba&nbsp;<br></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card mb-3\" mbr-if=\"cardAmount > 1\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                    <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>Bejelentő nyomtatványok - VPOP_PMT17 és TTNYELT</b></h6>\n                                    <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                </a>\n\n                            </div>\n                            <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\"><a href=\"https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_vam/VPOP_PMT17\" class=\"text-primary\" target=\"_blank\">VPOP_PMT17 </a>- pénzmosással / terrorizmusfinanszírozással kapcsolatos gyanú esetén ezen a nyomtatványon kell bejelentést tenni<br><br><a href=\"https://nav.gov.hu/penzmosas\" class=\"text-primary\" target=\"_blank\">TTNYELT </a>- ezen a nyomtatványon kell bejelenteni, ha eltérést talál a TT nyilvántartásban<br><br><a href=\"https://kny.nav.gov.hu/home\" class=\"text-primary\" target=\"_blank\">Központi Tényleges Tulajdonosi Nyilvántartás</a><br><br></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card mb-3\" mbr-if=\"cardAmount > 2\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                    <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>ENSZ és EU szankciós lista</b></h6>\n                                    <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                </a>\n                            </div>\n                            <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                                        <a href=\"https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list\" class=\"text-primary\" target=\"_blank\">ENSZ szankciós lista</a><br><a href=\"https://webgate.ec.europa.eu/fsd/fsf/public/files/pdfFullSanctionsList/content?token=dG9rZW4tMjAxNw\" class=\"text-primary\" target=\"_blank\">EU szankciós lista</a></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card mb-3\" mbr-if=\"cardAmount > 3\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                    <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>\n                                        Kiemelt kockázatú és offshore országok listája</b></h6>\n                                    <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                </a>\n                            </div>\n                            <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                                        <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R1675-20240207\" class=\"text-primary\" target=\"_blank\">Kiemelt kockázatot jelentő, stratégiai hiányosságokkal rendelkező 3. országok</a>&nbsp;(2024. február)<br><br><a href=\"https://www.consilium.europa.eu/hu/policies/eu-list-of-non-cooperative-jurisdictions/#countries\" class=\"text-primary\" target=\"_blank\">Offshore országok</a>&nbsp;(2024. október)</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card mb-3\" mbr-if=\"cardAmount > 4\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                   <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>\n                                       Központi TT nyilvántartás elérhetősége, bizonytalan és megbízhatatlan TT indexű adózók</b></h6>\n                                    <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                </a>\n                            </div>\n                            <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\"><a href=\"https://kny.nav.gov.hu/home\" class=\"text-primary\" target=\"_blank\">Központi Tényleges Tulajdonosi Nyilvántartás&nbsp;</a><br><br><a href=\"https://nav.gov.hu/adatbazisok/afad-tv.-szerinti-bizonytalan-es-megbizhatatlan-adatszolgaltatok\" class=\"text-primary\" target=\"_blank\">Bizonytalan és Megbízhatatlan TT index-szel rendelkező adózók<br></a><br></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card mb-3\" mbr-if=\"cardAmount > 5\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                    <h6 class=\"panel-title-edit mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-title-edit\"><b>Pénzmosási típusszabályzat - könyvelők, adótanácsadók, ingatlanosok, székhelyszolgáltatók</b></h6>\n                                    <span class=\"mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 30px;\"></span>\n                                </a>\n                            </div>\n                            <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                                        A NAV Pénzmosás Elleni iroda minden hatálya alá tartozó szolgáltató számára közzéteszi az aktuális típusszabályzatot, mely az alábbi címen érhető el:<br><br><a href=\"https://pei.nav.gov.hu/tipusszabalyzatok/tipusszabalyzatok\" class=\"text-primary\" target=\"_blank\">NAV - Típusszabályzatok</a></p>\n                                </div>\n                            </div>\n                        </div>\n                </div>\n            </div>\n        </div>\n</section>",
+          "_cid": "uuyRqYxtyH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content3-1t"
+        }
+      ]
+    }
+  }
+}
