@@ -1,0 +1,1 @@
+# penzmosasi-torveny.hu
